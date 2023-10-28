@@ -1,0 +1,179 @@
+
+    *{
+        margin: 0;
+        padding:0;
+        font-family: sans-serif;
+    } 
+
+
+    .hero{
+        width: 100%;
+        height: 100vh;
+        background-image:url(/assets/background3.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    /* Logo for the  website */
+
+    .logo {
+        width: 180px;
+        /*background-color:steelblue;
+        border: 1em;
+        border-radius: 5px;*/
+        cursor: pointer;
+    }
+
+    .navbar{
+        /*margin is for the icon palcment if it's in the center or on the corner 
+        diplay is the button placment and without it it would be near the icon 
+        align-iteam is the placment of the logo and the sign in position in the page which we picked center
+        justify- content is the deisntance between the logo and the button sapce between.
+        # try to use background color to see the place of our navbar!!!*/
+        width: 85%;
+        height: 15%;
+        margin: auto;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+
+
+    /* button is not a class it's a tag that why there is no dot(.) before it  */
+    button{
+        color:azure;
+        padding: 10px 25px ;
+        background: transparent;
+        border: 1px solid azure ;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+        
+
+    }
+
+    h1{
+        font-family:fantasy;
+        font-size: 80px;
+        margin: 10px 0 30px;
+        line-height:90px;
+    }
+
+    .content{
+        color:azure;
+        font-weight:bold;
+        position: absolute;
+        top: 50%;
+        left: 200px;
+        transform: translateY(-50%);
+        z-index:2;
+    }
+
+    .side-bar{
+        width: 50px;
+        height: 100vh;
+        background:linear-gradient(#0a0d46,#010e23);
+        position: absolute;
+        left: 0;
+        top:0;
+    }
+
+    .menu{
+        display: block;
+        width:  25px;
+        margin: 40px auto 0;
+        cursor:pointer;
+        
+        
+    }
+    .socialicons img,
+    .usefullicons img{
+        width: 35px;
+        margin: 5px auto;
+        cursor: pointer;
+    }
+
+    .socialicons{
+        width: 50px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+    .usefullicons{
+        width: 50px;
+        text-align: center;
+        position: absolute;
+        bottom: 5%;
+    }
+
+    .bubble img {
+        width: 50px;    
+        animation: bubble 7s linear infinite;
+    }
+
+    .bubble{
+        /* align-item make the bubble in the center 
+        justify-content spreate each bubble from each other
+        position ajust where the bubble going ot be
+        bottom means down */
+        width: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        bottom: -10px;
+
+    }
+
+    @keyframes bubble {
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        70%{
+            opacity:1;
+
+        }
+        100%{
+            transform: translateY(-80vh);
+            opacity: 0;
+        }    
+    }
+
+    .bubble  img:nth-child(1){
+        animation-delay: 2s;
+        width: 25px;
+    }
+    .bubble img:nth-child(2){
+        animation-delay: 1s;
+        width: 70px;
+    }
+    .bubble img:nth-child(3){
+        animation-delay: 3s;
+        width: 45px;
+    }
+    .bubble  img:nth-child(4){
+        animation-delay: 1s;
+        width: 75px;
+    }
+    .bubble img:nth-child(5){
+        animation-delay: -3s;
+        width: 25px;
+    }
+    .bubble img:nth-child(6){
+        animation-delay: 2s;
+        width: 45px;
+    }
+    .bubble img:nth-child(7){
+        animation-delay: 1s;
+        width: 35px;
+    }
+
+
+
